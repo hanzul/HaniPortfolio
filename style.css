@@ -1,0 +1,307 @@
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+/* body {
+  line-height: 1;
+} */
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background: #EEEEF7;
+}
+
+/* li {
+  border: 1px solid red;
+} */
+
+nav {
+  width: 100%;
+  padding: 20px 35px;
+  background-color: rgb(50, 52, 61);
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#hani {
+  flex: 1 1 auto;
+  /* background-color: teal; */
+}
+
+.nav-links {
+  flex: 0 0 auto;
+  border-bottom: 2px solid #A7C5CC;
+  margin: 0 10px;
+}
+
+#hani-link {
+  /* border: 2px solid blue; */
+  color: #32343D;
+  padding-left:80px;
+  background-color: #A7C5CC;
+  font-size: 36px;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #A7C5CC;
+  background-image: url("./images/hero.JPEG");
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  /* display: flex; */
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+
+.main {
+  /* background-color: gray; */
+  /* css variables for padding here */
+  padding: 20px;
+}
+
+.about {
+  display: flex;
+}
+
+/* Work Section */
+.work {
+    display: flex;
+    flex-direction:row;
+    /* height:300px; */
+  }
+
+.h2-work{
+    font-size: 3em;
+    line-height: 1;
+    text-align: right;
+    padding-left: 70px;
+    padding-right: 40px;
+    border-right: 3px solid black;
+  }
+
+.grid-container{
+    display: grid;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 15%;
+    padding-bottom: 1%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6,50px);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.grid-item{
+grid-column: span 4;
+grid-row: span 4;
+border: 3px black;
+}
+.first-item{
+    grid-column: span 8;
+    grid-row: span 8;
+}
+/* img {
+    height: 100%;
+     width: 100%;
+    background-color: powderblue;
+  } */
+
+/* Contact Section */
+.contact {
+    display: flex;
+}
+
+.h2-main {
+  font-size: 3em;
+  line-height: 1;
+  text-align: right;
+  padding-left: 70px;
+  padding-right: 40px;
+  border-right: 3px solid black;
+}
+
+.right-side {
+  /* border-left: 3px solid black; */
+  padding-left: 30px;
+}
+
+.work img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Fotter - Contact */
+.contact {
+    flex: 1 1 auto;
+    
+    /* background-color: teal; */
+  }
+
+.contact-container{
+    padding-left: 10%;
+    padding-right: 15%;
+    padding-bottom: 15%;
+    
+
+}
+
+  .contact-links {
+ 
+    flex: 0 0 auto;
+    border-bottom: 2px solid teal;
+    margin: 0 10px;
+    
+    
+  }
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    padding-left: 30%;
+    
+  }
+  .h2-contact{
+ 
+    font-size: 3em;
+    line-height: 1;
+    text-align: right;
+    padding-left: 70px;
+    padding-right: 40px;
+    border-right: 3px solid black;
+  }
