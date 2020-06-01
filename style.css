@@ -163,7 +163,8 @@ nav {
 .nav-links {
   flex: 0 0 auto;
   border-bottom: 2px solid #A7C5CC;
-  margin: 0 10px;
+  margin: 0 40px;
+
 }
 
 #hani-link {
@@ -176,6 +177,7 @@ nav {
 
 .no-decoration {
   text-decoration: none;
+  color: #A8CDCF;
 }
 
 .hero {
@@ -189,16 +191,38 @@ nav {
   flex-wrap: nowrap;
   align-items: baseline;
 }
+.hero h2{
+    text-align: right;
+    margin-right: 1%;
+    
+}
 
 .main {
   /* background-color: gray; */
   /* css variables for padding here */
   padding: 20px;
 }
-
+/* About Section */
 .about {
   display: flex;
 }
+.h2-main {
+    font-size: 3em;
+    line-height: 1;
+    text-align: right;
+    padding-left: 70px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    border-right: 3px solid black;
+  }
+
+  .right-side {
+    /* border-left: 3px solid black; */
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+  
+
 
 /* Work Section */
 .work {
@@ -211,8 +235,10 @@ nav {
     font-size: 3em;
     line-height: 1;
     text-align: right;
+    padding-top: 30px;
     padding-left: 70px;
-    padding-right: 40px;
+    padding-right: 50px;
+    padding-bottom: 30px;
     border-right: 3px solid black;
   }
 
@@ -230,8 +256,17 @@ nav {
 .grid-item{
 grid-column: span 4;
 grid-row: span 4;
-border: 3px black;
+border: 3px solid #6B7078;
 }
+.grid-item img{
+  transition: transform .2s;
+  opacity: .7;
+}
+.grid-item img:hover{
+  
+  opacity: 1;
+}
+
 .first-item{
     grid-column: span 8;
     grid-row: span 8;
@@ -247,19 +282,6 @@ border: 3px black;
     display: flex;
 }
 
-.h2-main {
-  font-size: 3em;
-  line-height: 1;
-  text-align: right;
-  padding-left: 70px;
-  padding-right: 40px;
-  border-right: 3px solid black;
-}
-
-.right-side {
-  /* border-left: 3px solid black; */
-  padding-left: 30px;
-}
 
 .work img {
     width: 100%;
@@ -269,22 +291,27 @@ border: 3px black;
 /* Fotter - Contact */
 .contact {
     flex: 1 1 auto;
-    
     /* background-color: teal; */
   }
+
 
 .contact-container{
     padding-left: 10%;
     padding-right: 15%;
     padding-bottom: 15%;
-    
+}
+
+.text-style{
+  text-decoration: none;
+  color:black;
 
 }
+
 
   .contact-links {
  
     flex: 0 0 auto;
-    border-bottom: 2px solid teal;
+    border-bottom: 2px solid black;
     margin: 0 10px;
     
     
@@ -301,7 +328,10 @@ border: 3px black;
     font-size: 3em;
     line-height: 1;
     text-align: right;
+    padding-top: 30px;
     padding-left: 70px;
-    padding-right: 40px;
+    padding-right: 50px;
+    padding-bottom: 30px;
     border-right: 3px solid black;
+   
   }
