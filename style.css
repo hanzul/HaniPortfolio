@@ -101,9 +101,6 @@ nav,
 section {
   display: block;
 }
-/* body {
-  line-height: 1;
-} */
 ol,
 ul {
   list-style: none;
@@ -139,6 +136,8 @@ body {
   background: #EEEEF7;
 }
 
+/* Header - Navigation Section */
+
 /* li {
   border: 1px solid red;
 } */
@@ -164,7 +163,7 @@ nav {
   flex: 0 0 auto;
   border-bottom: 2px solid #A7C5CC;
   margin: 0 40px;
-
+  border-collapse: separate;
 }
 
 #hani-link {
@@ -178,7 +177,11 @@ nav {
 .no-decoration {
   text-decoration: none;
   color: #A8CDCF;
+  border-spacing: 15px 50px 20px 40px;
+  text-align: end;
 }
+
+/* hero Section Start */
 
 .hero {
   background-color: #A7C5CC;
@@ -192,8 +195,9 @@ nav {
   align-items: baseline;
 }
 .hero h2{
-    text-align: right;
+    text-align:right;
     margin-right: 1%;
+    font-size: 40px;
     
 }
 
@@ -202,6 +206,7 @@ nav {
   /* css variables for padding here */
   padding: 20px;
 }
+
 /* About Section */
 .about {
   display: flex;
@@ -271,12 +276,6 @@ border: 3px solid #6B7078;
     grid-column: span 8;
     grid-row: span 8;
 }
-/* img {
-    height: 100%;
-     width: 100%;
-    background-color: powderblue;
-  } */
-
 /* Contact Section */
 .contact {
     display: flex;
@@ -313,8 +312,8 @@ border: 3px solid #6B7078;
     flex: 0 0 auto;
     border-bottom: 2px solid black;
     margin: 0 10px;
-    
-    
+    border-collapse: separate;
+    border-spacing: 1px;
   }
   .contact-list {
     display: flex;
